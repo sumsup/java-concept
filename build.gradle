@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.0'
+    testCompile("org.assertj:assertj-core:3.23.1")
+    implementation 'joda-time:joda-time:2.12.1'
+}
